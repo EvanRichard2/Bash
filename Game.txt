@@ -1,0 +1,813 @@
+@echo off  
+
+title ‘My Game’  
+
+color 0A  
+
+if "%1" neq "" ( goto %1)  
+
+echo Welcome To My Game  
+
+pause  
+
+:Menu  
+
+cls  
+
+echo ‘1. Start’  
+
+echo ‘2. Instructions’  
+
+echo ‘3. Exit’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Start_1’  
+
+if %answer%==2 goto ‘Instructions’  
+
+if %answer%==3 goto ‘Exit’  
+
+:‘Start_1’  
+
+cls  
+
+echo You walk outside your house.  
+
+pause  
+
+cls  
+
+echo ‘1. Temple’  
+
+echo ‘2. Castle’  
+
+echo ‘3. Home’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Temple’  
+
+if %answer%==2 goto ‘Castle’  
+
+if %answer%==3 goto ‘Home’  
+
+pause  
+
+:‘Temple’  
+
+cls  
+
+echo Which way do you want to go.  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Temple_1’  
+
+cls  
+
+echo ‘1. Up’  
+
+echo ‘2. Left’  
+
+echo ‘3. Right’ 
+
+echo ‘4. Map’ 
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Up’  
+
+if %answer%==2 goto ‘Left’  
+
+if %answer%==3 goto ‘Right’ 
+
+if %answer%==4 goto ‘Map’ 
+
+pause  
+
+:‘Up’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Left’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Right’  
+
+cls  
+
+echo You go right.  
+
+pause  
+
+goto :‘Temple_2’  
+
+:‘Map’ 
+
+cls  
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //             H            //  
+
+echo //    ///////////////////   //  
+
+echo //    ///////////////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_1’ 
+
+:‘Temple_2’  
+
+cls  
+
+echo ‘1. Left’  
+
+echo ‘2. Right’ 
+
+echo ‘3. Map’ 
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Left_1’  
+
+if %answer%==2 goto ‘Right_1’ 
+
+if %answer%==3 goto ‘Map_1’  
+
+pause  
+
+:‘Left_1’  
+
+cls  
+
+echo You go Left.  
+
+pause  
+
+goto :‘Temple_3’  
+
+:‘Right_1’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Map_1’ 
+
+cls  
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //    //////// H ////////   //  
+
+echo //    ////////   ////////   //  
+
+echo //    ////////   ////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_2’ 
+
+:‘Temple_3’  
+
+cls  
+
+echo ‘1. Up’  
+
+echo ‘2. Left’  
+
+echo ‘3. Right’  
+
+echo ‘4. Map’ 
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Up_2’  
+
+if %answer%==2 goto ‘Left_2’  
+
+if %answer%==3 goto ‘Right_2’  
+
+if %answer%==4 goto ‘Map_2’  
+
+pause  
+
+:‘Up_2’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘left_2’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Right_2’  
+
+cls  
+
+echo You go Right.  
+
+pause  
+
+goto :‘Temple_4’  
+
+:‘Map_2’ 
+
+cls  
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //             H            //  
+
+echo //    ///////////////////   //  
+
+echo //    ///////////////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_3’ 
+
+:‘Temple_4’  
+
+cls  
+
+echo ‘1. Up’  
+
+echo ‘2. Left’  
+
+echo ‘3. Right’  
+
+echo ‘4. Map’ 
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Up_3’  
+
+if %answer%==2 goto ‘Left_3’  
+
+if %answer%==3 goto ‘Right_3’  
+
+if %answer%==4 goto ‘Map_3’  
+
+pause  
+
+:‘Up_3’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘left_3’  
+
+cls  
+
+echo You go Left.  
+
+pause  
+
+goto :‘Temple_5’  
+
+:‘Right_3’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Map_3’ 
+
+cls  
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //    //////// H            //  
+
+echo //    ////////   ////////   //  
+
+echo //    ////////   ////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_4’ 
+
+:‘Temple_5’  
+
+cls  
+
+echo ‘1. Up’  
+
+echo ‘2. Left’  
+
+echo ‘3. Right’  
+
+echo ‘4. Map’ 
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Up_4’  
+
+if %answer%==2 goto ‘Left_4’  
+
+if %answer%==3 goto ‘Right_4’ 
+
+if %answer%==4 goto ‘Map_4’  
+
+pause  
+
+:‘Up_4’  
+
+cls  
+
+echo You go Up.  
+
+pause  
+
+goto :‘Temple_6’  
+
+:‘left_4’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Right_4’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Map_4’ 
+
+cls   
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //             H            //  
+
+echo //    ///////////////////   //  
+
+echo //    ///////////////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_5’ 
+
+:‘Temple_6’  
+
+cls  
+
+echo ‘1. Up’  
+
+echo ‘2. Left’  
+
+echo ‘3. Right’  
+
+echo ‘4. Map’ 
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Up_5’  
+
+if %answer%==2 goto ‘Left_5’  
+
+if %answer%==3 goto ‘Right_5’ 
+
+if %answer%==4 goto ‘Map_5’   
+
+pause  
+
+:‘Up_5’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘left_5’  
+
+cls  
+
+echo You go Left.  
+
+pause  
+
+goto :‘Temple_7’  
+
+:‘Right_5’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Map_5’ 
+
+cls   
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //             H            //  
+
+echo //    ///////////////////   //  
+
+echo //    ///////////////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_6’ 
+
+:‘Temple_7’  
+
+cls  
+
+echo ‘1. Up’  
+
+echo ‘2. Left’  
+
+echo ‘3. Right’ 
+
+echo ‘4. Map’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Up_6’  
+
+if %answer%==2 goto ‘Left_6’  
+
+if %answer%==3 goto ‘Right_6’  
+
+if %answer%==4 goto ‘Map_6’  
+
+pause  
+
+:‘Up_6’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘left_6’  
+
+cls  
+
+echo Wrong Way  
+
+pause  
+
+goto :‘Temple_1’  
+
+:‘Right_6’  
+
+cls  
+
+echo You go Right.  
+
+pause  
+
+goto :‘Temple_8’  
+
+:‘Map_6’ 
+
+cls   
+
+echo //////////////////////////////  
+
+echo //                          //  
+
+echo //                          // 
+
+echo //    ////////   ////////   // 
+
+echo //    ////////   ////////   //  
+
+echo //             H ////////   //  
+
+echo //    ////////   ////////   //  
+
+echo //    ////////   ////////   // 
+
+echo //                          // 
+
+echo ////////////////////////////// 
+
+pause  
+
+goto :‘Temple_7’ 
+
+:‘Temple_8’  
+
+cls  
+
+echo Guardian  
+
+echo "Go Home Kid"  
+
+pause  
+
+goto :‘Start_1’  
+
+  
+
+  
+
+:‘Castle’  
+
+cls  
+
+echo ‘1. Blow up Castle’  
+
+echo ‘2. Leave Castle’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Start_2’  
+
+if %answer%==2 goto ‘Start_1’  
+
+pause  
+
+:‘Start_2’  
+
+cls  
+
+echo The Castle is now DESTROYED. 
+
+pause  
+
+goto :‘Start_3’  
+
+:‘Start_3’  
+
+cls  
+
+echo You walk outside your house.  
+
+pause  
+
+cls  
+
+echo ‘1. Temple’  
+
+echo ‘2. Castle’  
+
+echo ‘3. Home’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Temple’  
+
+if %answer%==2 goto ‘Castle_1’  
+
+if %answer%==3 goto ‘Home’  
+
+pause  
+
+:‘Castle_1’ 
+
+cls  
+
+echo The Castle is in Ruin. 
+
+pause  
+
+goto :‘Start_4’ 
+
+:‘Start_4’  
+
+cls  
+
+echo You walk outside your house.  
+
+pause  
+
+cls  
+
+echo ‘1. Temple’  
+
+echo ‘2. Castle’  
+
+echo ‘3. Home’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Temple’  
+
+if %answer%==2 goto ‘Castle_2’  
+
+if %answer%==3 goto ‘Home’  
+
+pause  
+
+:‘Castle_2’ 
+
+cls  
+
+echo You BURN THE ASHES! 
+
+pause  
+
+goto :‘Start_5’ 
+
+:‘Start_5’  
+
+cls  
+
+echo You walk outside your house.  
+
+pause  
+
+cls  
+
+echo ‘1. Temple’  
+
+echo ‘2. Castle’  
+
+echo ‘3. Home’  
+
+set /p answer=‘Type the number of your option and press enter.’  
+
+if %answer%==1 goto ‘Temple’  
+
+if %answer%==2 goto ‘Castle_3’  
+
+if %answer%==3 goto ‘Home’  
+
+pause  
+
+:‘Castle_3’ 
+
+cls  
+
+echo You get ARRESTED. 
+
+echo GAME OVER! 
+
+pause  
+
+goto :‘Exit’  
+
+:‘Home’  
+
+cls  
+
+echo Mom  
+
+echo "Get out my house."  
+
+pause  
+
+goto :‘Exit’  
+
+:‘Instructions’  
+
+cls  
+
+echo Play The Game!  
+
+echo You Fail In Maze You RESET. 
+
+pause  
+
+goto :Menu  
+
+:‘Exit’  
+
+cls  
+
+echo Thanks for playing !  
+
+pause  
+
+exit /b  
+
+goto Menu  
